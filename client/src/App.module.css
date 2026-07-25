@@ -1,0 +1,53 @@
+.textH{
+    display: flex;
+  justify-content: center;
+  font: 500 26px Kanit;
+}
+
+.divInput {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    .inpName {
+        width: 246px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #6C63FF;
+    }
+
+    .inpDescription {
+        width: 389px;
+        height: 38px;
+        border-radius: 5px;
+        border: 1px solid #6C63FF;
+    }
+
+    .btn {
+        width: 84px;
+        height: 38px;
+        border-radius: 5px;
+        border-width: 0;
+        background-color: #6C63FF;
+        font: 500 18px Kanit;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.divTask {
+    display: flex;
+    gap: 40px;
+
+    .titleText {
+        font: 500 20px Kanit;
+        text-transform: uppercase;
+    }
+
+    .descriptionText {
+        font: 500 20px Kanit;
+        text-transform: uppercase;
+        color: #C3C1E5;
+    }
+}
