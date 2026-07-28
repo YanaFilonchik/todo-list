@@ -1,27 +1,41 @@
-.textH{
-    display: flex;
-  justify-content: center;
-  font: 500 26px Kanit;
-}
+.mainForm {
+    max-width: 750px;
+    margin: auto;
+    position: relative;
 
-.divInput {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-
-    .inpName {
-        width: 246px;
-        height: 38px;
-        border-radius: 5px;
-        border: 1px solid #6C63FF;
+    .textH {
+        display: flex;
+        justify-content: center;
+        font: 500 26px Kanit;
     }
 
-    .inpDescription {
-        width: 389px;
-        height: 38px;
-        border-radius: 5px;
-        border: 1px solid #6C63FF;
+    .divInput {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+
+        input::placeholder {
+            font: 500 16px Inter;
+            color: #C3C1E5;
+        }
+
+        .inpName {
+            width: 246px;
+            height: 38px;
+            border-radius: 5px;
+            border: 0.5px solid #6C63FF;
+            padding-left: 15px;
+        }
+
+
+        .inpDescription {
+            width: 389px;
+            height: 38px;
+            border-radius: 5px;
+            border: 1px solid #6C63FF;
+            padding-left: 15px;
+        }
     }
 
     .btn {
@@ -36,18 +50,101 @@
     }
 }
 
-.divTask {
-    display: flex;
-    gap: 40px;
+.styleMap {
+    max-width: 520px;
+    margin: auto;
 
-    .titleText {
-        font: 500 20px Kanit;
-        text-transform: uppercase;
+    .cardTask {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            padding: 5px;
+        }
+
+        .divTask {
+            display: flex;
+            gap: 40px;
+
+            .titleText {
+                font: 500 20px Kanit;
+                text-transform: uppercase;
+            }
+
+            .descriptionText {
+                font: 500 20px Kanit;
+                text-transform: uppercase;
+                color: #C3C1E5;
+            }
+        }
     }
 
-    .descriptionText {
-        font: 500 20px Kanit;
+    hr {
+        border: 1px solid #6C63FF;
+    }
+}
+
+.modalForm {
+
+    gap: 20px;
+    min-width: 500px;
+    min-height: 289px;
+    border-width: 1px;
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    background-color: #F7F7F7;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+        font: 500 24px Kanit;
         text-transform: uppercase;
+        color: #252525;
+    }
+
+    input {
+        width: 440px;
+        height: 38px;
+        border: 1px solid #6C63FF;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    input::placeholder {
+        font: 500 16px Inter;
+        font-size: 16px;
         color: #C3C1E5;
+    }
+
+    .styleBtn {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        margin-top: 50px;
+
+        button {
+            width: 110px;
+            height: 38px;
+            border: 1px solid #6C63FF;
+            border-radius: 5px;
+        }
+
+        :first-child {
+            font: 500 18px Kanit;
+            text-transform: uppercase;
+            color: #6C63FF;
+        }
+
+        :last-child {
+            font: 500 18px Kanit;
+            text-transform: uppercase;
+            background-color: #6C63FF;
+            color: #F7F7F7;
+        }
     }
 }
